@@ -13,7 +13,7 @@ CREATE TABLE IF NOT EXISTS  `PROPERTY`(
 
 SELECT * FROM `PROPERTY`;
 
-INSERT INTO PROPERTY ( NAME, DESCRIPTION, N_ROOMS, SALE_VALUE) VALUES ('Edificio Novelo', 'Um belo prédio', 5, 500000);
+INSERT INTO PROPERTY (NAME, DESCRIPTION, N_ROOMS, SALE_VALUE) VALUES ('Edificio Novelo', 'Um belo prédio', 5, 500000);
 INSERT INTO PROPERTY (NAME, DESCRIPTION, N_ROOMS, SALE_VALUE) VALUES ('Edificio Verde', 'Um prédio sustentável com energia solar', 4, 450000);
 INSERT INTO PROPERTY (NAME, DESCRIPTION, N_ROOMS, SALE_VALUE) VALUES ('Residencial Sol Nascente', 'Condomínio com área de lazer completa', 3, 350000);
 INSERT INTO PROPERTY (NAME, DESCRIPTION, N_ROOMS, SALE_VALUE) VALUES ('Casa do Lago', 'Linda casa à beira do lago', 6, 750000);
@@ -30,5 +30,5 @@ SELECT * FROM PROPERTY WHERE SALE_VALUE < 500000 AND N_ROOMS > 2;
 
 SELECT * FROM PROPERTY WHERE  N_ROOMS > 5;
 
--- % indiac que tem coisas antes e depois
+-- % indica que tem coisas antes e depois
 SELECT * FROM PROPERTY WHERE SALE_VALUE >= 500000 AND NAME LIKE '%Edificio%';
